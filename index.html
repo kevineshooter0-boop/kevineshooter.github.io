@@ -3,418 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kévine Shooter — Site Officiel</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <title>Kévine Shooter — Officiel</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #080808;
-      color: white;
-    }
-
-    header {
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #222;
-      position: sticky;
-      top: 0;
-      background: rgba(8,8,8,0.95);
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #e50914;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
-
-    .hero {
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      padding: 50px 8%;
-      background:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)),
-        radial-gradient(circle at 75% 40%, #64131a, #080808 60%);
-    }
-
-    .hero-content {
-      max-width: 750px;
-    }
-
-    .small-title {
-      color: #aaa;
-      letter-spacing: 4px;
-      font-size: 12px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(55px, 12vw, 120px);
-      line-height: .85;
-      text-transform: uppercase;
-    }
-
-    h1 span {
-      color: #e50914;
-    }
-
-    .album-title {
-      font-size: 28px;
-      margin: 30px 0 10px;
-    }
-
-    .description {
-      color: #aaa;
-      max-width: 500px;
-      line-height: 1.7;
-    }
-
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      padding: 15px 22px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 1px solid white;
-      color: white;
-      display: inline-block;
-    }
-
-    .primary {
-      background: white;
-      color: black;
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    .section-title {
-      font-size: 45px;
-      margin-bottom: 35px;
-    }
-
-    .section-title span {
-      color: #e50914;
-    }
-
-    .player {
-      background: #151515;
-      padding: 30px;
-      border: 1px solid #292929;
-      max-width: 850px;
-    }
-
-    .player h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-    }
-
-    .tracks {
-      margin-top: 25px;
-      display: grid;
-      gap: 8px;
-    }
-
-    .track {
-      background: #111;
-      padding: 17px;
-      border: 1px solid #222;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .album {
-      background: #eee;
-      color: #111;
-    }
-
-    .album-box {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .cover {
-      aspect-ratio: 1;
-      background: linear-gradient(145deg, #111, #65151c);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 25px;
-    }
-
-    .cover strong {
-      font-size: 35px;
-    }
-
-    .price {
-      font-size: 28px;
-      font-weight: bold;
-      margin: 25px 0;
-    }
-
-    .contact {
-      background: #111;
-      text-align: center;
-    }
-
-    footer {
-      padding: 40px 8%;
-      text-align: center;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-
-    @media(max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      nav a {
-        margin: 0 5px;
-        font-size: 11px;
-      }
-
-      .album-box {
-        grid-template-columns: 1fr;
-      }
-
-      .cover {
-        max-width: 320px;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">KÉVINE <span>SHOOTER</span></div>
-
+<header class="hero">
   <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#musique">Musique</a>
-    <a href="#album">Album</a>
-    <a href="#apropos">À propos</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">KÉVINE SHOOTER</div>
+
+    <div class="nav-links">
+      <a href="#music">Musique</a>
+      <a href="#about">À propos</a>
+      <a href="#login">Espace artiste</a>
+    </div>
   </nav>
+
+  <div class="hero-content">
+    <p class="small-title">ARTISTE • AUTEUR • COMPOSITEUR</p>
+
+    <h1>KÉVINE<br>SHOOTER</h1>
+
+    <p>
+      Chanteur & rappeur camerounais.
+      <br>
+      Réalité, passion et musique.
+    </p>
+
+    <a class="button" href="#music">ÉCOUTER MA MUSIQUE</a>
+  </div>
 </header>
 
-<section class="hero" id="accueil">
-  <div class="hero-content">
 
-    <div class="small-title">SITE OFFICIEL • 2026</div>
+<main>
 
-    <h1>
-      KÉVINE<br>
-      <span>SHOOTER</span>
-    </h1>
+<section id="music" class="section">
 
-    <div class="album-title">
-      RÉALITÉ ET PASSION
-    </div>
+  <p class="section-label">MUSIQUE</p>
 
-    <p class="description">
-      La réalité dans mes textes. La passion dans ma musique.
-      Découvrez l'univers musical de Kévine Shooter.
-    </p>
+  <h2>Mes sorties</h2>
 
-    <div class="buttons">
-      <a class="button primary" href="#musique">
-        ▶ ÉCOUTER MA MUSIQUE
-      </a>
+  <p class="description">
+    Écoute gratuitement la musique de Kévine Shooter.
+  </p>
 
-      <a class="button" href="#album">
-        DÉCOUVRIR L'ALBUM
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section id="musique">
-
-  <div class="small-title">LECTEUR MUSICAL</div>
-
-  <h2 class="section-title">
-    À L'ÉCOUTE <span>MAINTENANT</span>
-  </h2>
-
-  <div class="player">
-
-    <h3>COLÈRE</h3>
-
-    <p style="color:#888;margin-bottom:20px;">
-      Kévine Shooter
-    </p>
-
-    <audio controls>
-      <source src="audio/colere.mp3" type="audio/mpeg">
-      Votre navigateur ne supporte pas le lecteur audio.
-    </audio>
-
-    <div class="tracks">
-
-      <div class="track">
-        <span>01 — COLÈRE</span>
-        <span>▶</span>
-      </div>
-
-      <div class="track">
-        <span>02 — FLASHÉ SUR TOI</span>
-        <span>▶</span>
-      </div>
-
-      <div class="track">
-        <span>03 — JOLIE MADAME</span>
-        <span>▶</span>
-      </div>
-
-      <div class="track">
-        <span>04 — RAP GAMES</span>
-        <span>▶</span>
-      </div>
-
-    </div>
-
+  <div id="releases">
+    Chargement des sorties...
   </div>
 
 </section>
 
-<section class="album" id="album">
 
-  <div class="album-box">
+<section id="about" class="section about">
 
-    <div class="cover">
-      <div>
-        <strong>
-          RÉALITÉ<br>
-          ET<br>
-          PASSION
-        </strong>
+  <p class="section-label">À PROPOS</p>
 
-        <p style="margin-top:20px;">
-          KÉVINE SHOOTER
-        </p>
-      </div>
-    </div>
+  <h2>Kévine Shooter</h2>
+
+  <p>
+    Auteur-compositeur, chanteur, rappeur et écrivain camerounais,
+    Kévine Shooter développe un univers musical entre rap conscient,
+    mélancolie, amour et réalité de la vie.
+  </p>
+
+</section>
+
+
+<section id="login" class="section login">
+
+  <p class="section-label">ESPACE ARTISTE</p>
+
+  <h2>Connexion</h2>
+
+  <p>Accède à ton tableau de bord de distribution.</p>
+
+  <input
+    id="email"
+    type="email"
+    placeholder="Adresse e-mail"
+  >
+
+  <input
+    id="password"
+    type="password"
+    placeholder="Mot de passe"
+  >
+
+  <button onclick="login()">SE CONNECTER</button>
+
+  <p id="loginMessage"></p>
+
+</section>
+
+
+<section id="dashboard" class="section dashboard" style="display:none;">
+
+  <div class="dashboard-header">
 
     <div>
+      <p class="section-label">DASHBOARD</p>
+      <h2>Kévine Shooter Distribution</h2>
+    </div>
 
-      <div class="small-title">
-        PREMIER ALBUM SOLO
-      </div>
+    <button onclick="logout()">Déconnexion</button>
 
-      <h2 class="section-title">
-        RÉALITÉ <span>ET PASSION</span>
-      </h2>
+  </div>
 
-      <p>
-        9 titres qui racontent la réalité de la vie,
-        les émotions, les relations et la passion artistique.
-      </p>
 
-      <div class="price">
-        1 500 FCFA
-      </div>
+  <div class="dashboard-grid">
 
-      <a class="button" href="#">
-        💿 TÉLÉCHARGER L'ALBUM
-      </a>
+    <div class="card">
+      <span>🎵</span>
+      <h3>Mes sorties</h3>
+      <strong id="releaseCount">0</strong>
+    </div>
 
+    <div class="card">
+      <span>🎧</span>
+      <h3>Streams</h3>
+      <strong id="streamCount">0</strong>
+    </div>
+
+    <div class="card">
+      <span>🌍</span>
+      <h3>Distribution</h3>
+      <strong>Worldwide</strong>
+    </div>
+
+    <div class="card">
+      <span>💰</span>
+      <h3>Revenus</h3>
+      <strong id="revenue">0 XAF</strong>
     </div>
 
   </div>
 
-</section>
 
-<section id="apropos">
+  <div class="dashboard-actions">
 
-  <div class="small-title">L'ARTISTE</div>
+    <button onclick="showNewRelease()">
+      ＋ NOUVELLE SORTIE
+    </button>
 
-  <h2 class="section-title">
-    QUI EST <span>KÉVINE SHOOTER ?</span>
-  </h2>
+    <button onclick="loadStats()">
+      ↻ ACTUALISER LES STATS
+    </button>
 
-  <p style="max-width:700px;color:#aaa;">
-    Kévine Shooter est un artiste auteur-compositeur,
-    chanteur, rappeur et écrivain camerounais.
-    Son univers mélange rap conscient, mélodie,
-    émotion et observation de la société.
-  </p>
-
-</section>
-
-<section class="contact" id="contact">
-
-  <div class="small-title">CONTACT PROFESSIONNEL</div>
-
-  <h2 class="section-title">
-    PARLONS <span>DU PROJET</span>
-  </h2>
-
-  <p style="color:#aaa;margin-bottom:25px;">
-    Booking • Featuring • Collaboration • Interview
-  </p>
-
-  <div class="price">
-    20 000 FCFA
   </div>
 
-  <a class="button primary" href="#">
-    📩 ME CONTACTER
-  </a>
+
+  <div id="newRelease" style="display:none;">
+
+    <h3>Nouvelle sortie</h3>
+
+    <input
+      id="releaseTitle"
+      type="text"
+      placeholder="Titre de la sortie"
+    >
+
+    <select id="releaseType">
+      <option value="single">Single</option>
+      <option value="ep">EP</option>
+      <option value="album">Album</option>
+    </select>
+
+    <input
+      id="releaseGenre"
+      type="text"
+      placeholder="Genre musical"
+    >
+
+    <input
+      id="releaseDate"
+      type="date"
+    >
+
+    <div class="worldwide">
+      🌍 <strong>Distribution mondiale</strong>
+      <br>
+      Cette sortie sera configurée pour le monde entier.
+    </div>
+
+    <button onclick="createRelease()">
+      CRÉER LA SORTIE
+    </button>
+
+    <p id="releaseMessage"></p>
+
+  </div>
 
 </section>
+
+</main>
+
 
 <footer>
 
-  <strong>KÉVINE SHOOTER</strong>
+  <h3>KÉVINE SHOOTER</h3>
 
   <p>
-    Réalité dans les mots. Passion dans la musique.
-  </p>
-
-  <p style="margin-top:15px;">
     © 2026 Kévine Shooter — Tous droits réservés.
   </p>
 
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="config.js"></script>
+
+<script src="app.js"></script>
 
 </body>
     </html>
