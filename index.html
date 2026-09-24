@@ -1,552 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Site officiel de Kévine Shooter — chanteur, rappeur, auteur-compositeur et écrivain camerounais."
-  >
+  <meta name="description"
+        content="Site officiel de Kévine Shooter — auteur-compositeur, chanteur, rappeur et écrivain camerounais.">
 
-  <title>Kévine Shooter — Officiel</title>
+  <title>KÉVINE SHOOTER — Site Officiel</title>
 
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-<!-- =========================
-     HEADER
-========================= -->
-
-<header class="hero">
-
-  <nav>
+  <header class="header">
 
     <div class="logo">
-      KÉVINE SHOOTER
+      KÉVINE <span>SHOOTER</span>
     </div>
 
-    <div class="nav-links">
-
-      <a href="#music">
-        Musique
-      </a>
-
-      <a href="#about">
-        À propos
-      </a>
-
-      <a href="#login">
-        Espace artiste
-      </a>
-
-    </div>
-
-  </nav>
-
-
-  <div class="hero-content">
-
-    <p class="small-title">
-      ARTISTE • AUTEUR • COMPOSITEUR
-    </p>
-
-    <h1>
-      KÉVINE<br>
-      SHOOTER
-    </h1>
-
-    <p>
-      Chanteur & rappeur camerounais.
-      <br>
-      Réalité, passion et musique.
-    </p>
-
-    <a
-      class="button"
-      href="#music"
-    >
-      ÉCOUTER MA MUSIQUE
-    </a>
-
-  </div>
-
-</header>
-
-
-
-<!-- =========================
-     CONTENU PRINCIPAL
-========================= -->
-
-<main>
-
-
-<!-- =========================
-     MUSIQUE
-========================= -->
-
-<section
-  id="music"
-  class="section"
->
-
-  <p class="section-label">
-    MUSIQUE
-  </p>
-
-  <h2>
-    Mes sorties
-  </h2>
-
-  <p class="description">
-    Écoute gratuitement la musique de Kévine Shooter.
-  </p>
-
-  <div id="releases">
-
-    Chargement des sorties...
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     À PROPOS
-========================= -->
-
-<section
-  id="about"
-  class="section about"
->
-
-  <p class="section-label">
-    À PROPOS
-  </p>
-
-  <h2>
-    Kévine Shooter
-  </h2>
-
-  <p>
-    Auteur-compositeur, chanteur, rappeur et écrivain
-    camerounais, Kévine Shooter développe un univers
-    musical entre rap conscient, mélancolie, amour
-    et réalité de la vie.
-  </p>
-
-</section>
-
-
-
-<!-- =========================
-     CONNEXION
-========================= -->
-
-<section
-  id="login"
-  class="section login"
->
-
-  <p class="section-label">
-    ESPACE ARTISTE
-  </p>
-
-  <h2>
-    Connexion
-  </h2>
-
-  <p>
-    Accède à ton tableau de bord de distribution.
-  </p>
-
-
-  <input
-    id="email"
-    type="email"
-    placeholder="Adresse e-mail"
-    autocomplete="email"
-  >
-
-
-  <input
-    id="password"
-    type="password"
-    placeholder="Mot de passe"
-    autocomplete="current-password"
-  >
-
-
-  <button
-    type="button"
-    onclick="login()"
-  >
-    SE CONNECTER
-  </button>
-
-
-  <p id="loginMessage"></p>
-
-</section>
-
-
-
-<!-- =========================
-     DASHBOARD
-========================= -->
-
-<section
-  id="dashboard"
-  class="section dashboard"
-  style="display:none;"
->
-
-
-  <div class="dashboard-header">
-
-    <div>
-
-      <p class="section-label">
-        DASHBOARD
-      </p>
-
-      <h2>
-        Kévine Shooter Distribution
-      </h2>
-
-    </div>
-
-
-    <button
-      type="button"
-      onclick="logout()"
-    >
-      DÉCONNEXION
-    </button>
-
-  </div>
-
-
-
-  <!-- STATISTIQUES -->
-
-  <div class="dashboard-grid">
-
-
-    <div class="card">
-
-      <span>
-        🎵
-      </span>
-
-      <h3>
-        Mes sorties
-      </h3>
-
-      <strong id="releaseCount">
-        0
-      </strong>
-
-    </div>
-
-
-    <div class="card">
-
-      <span>
-        🎧
-      </span>
-
-      <h3>
-        Streams
-      </h3>
-
-      <strong id="streamCount">
-        0
-      </strong>
-
-    </div>
-
-
-    <div class="card">
-
-      <span>
-        🌍
-      </span>
-
-      <h3>
-        Distribution
-      </h3>
-
-      <strong>
-        Worldwide
-      </strong>
-
-    </div>
-
-
-    <div class="card">
-
-      <span>
-        💰
-      </span>
-
-      <h3>
-        Revenus
-      </h3>
-
-      <strong id="revenue">
-        0 XAF
-      </strong>
-
-    </div>
-
-
-  </div>
-
-
-
-  <!-- ACTIONS -->
-
-  <div class="dashboard-actions">
-
-    <button
-      type="button"
-      onclick="showNewRelease()"
-    >
-      ＋ NOUVELLE SORTIE
-    </button>
-
-
-    <button
-      type="button"
-      onclick="loadStats()"
-    >
-      ↻ ACTUALISER LES STATS
-    </button>
-
-  </div>
-
+    <nav class="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#musique">Musique</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+      <a href="#connexion">Espace artiste</a>
+    </nav>
+
+  </header>
 
 
   <!-- =========================
-       NOUVELLE SORTIE
-  ========================= -->
+       ACCUEIL
+  ========================== -->
 
-  <div
-    id="newRelease"
-    style="display:none;"
-  >
+  <main>
 
-    <h3>
-      Nouvelle sortie
-    </h3>
+    <section id="accueil" class="hero">
 
+      <div class="hero-content">
 
-    <!-- TITRE -->
+        <p class="hero-small">
+          AUTEUR-COMPOSITEUR • CHANTEUR • RAPPEUR • ÉCRIVAIN
+        </p>
 
-    <input
-      id="releaseTitle"
-      type="text"
-      placeholder="Titre de la sortie"
-      maxlength="150"
-    >
+        <h1>
+          KÉVINE<br>
+          <span>SHOOTER</span>
+        </h1>
 
+        <p class="hero-text">
+          La réalité de la vie transformée en musique.
+        </p>
 
-    <!-- TYPE -->
+        <a href="#musique" class="btn">
+          ÉCOUTER MA MUSIQUE
+        </a>
 
-    <select id="releaseType">
+      </div>
 
-      <option value="single">
-        Single
-      </option>
+    </section>
 
-      <option value="ep">
-        EP
-      </option>
 
-      <option value="album">
-        Album
-      </option>
+    <!-- =========================
+         MUSIQUE
+    ========================== -->
 
-    </select>
+    <section id="musique" class="section">
 
+      <div class="section-title">
 
-    <!-- GENRE -->
+        <p>MON UNIVERS</p>
 
-    <input
-      id="releaseGenre"
-      type="text"
-      placeholder="Genre musical"
-      maxlength="100"
-    >
+        <h2>MES SORTIES</h2>
 
+      </div>
 
-    <!-- DATE -->
+      <div id="releases" class="releases">
 
-    <label for="releaseDate">
-      Date de sortie
-    </label>
+        <div class="loading">
+          Chargement de mes sorties...
+        </div>
 
-    <input
-      id="releaseDate"
-      type="date"
-    >
+      </div>
 
+    </section>
 
-    <!-- NUMÉRO DU MORCEAU -->
 
-    <input
-      id="trackNumber"
-      type="number"
-      min="1"
-      value="1"
-      placeholder="Numéro du morceau"
-    >
+    <!-- =========================
+         À PROPOS
+    ========================== -->
 
+    <section id="apropos" class="section about">
 
-    <!-- TITRE DU MORCEAU -->
+      <div class="section-title">
 
-    <input
-      id="trackTitle"
-      type="text"
-      placeholder="Titre du morceau"
-      maxlength="150"
-    >
+        <p>QUI SUIS-JE ?</p>
 
+        <h2>À PROPOS DE KÉVINE SHOOTER</h2>
 
-    <!-- FICHIER AUDIO -->
+      </div>
 
-    <label for="audioFile">
-      🎵 Fichier audio
-    </label>
+      <div class="about-content">
 
-    <input
-      id="audioFile"
-      type="file"
-      accept="audio/mpeg,audio/wav,audio/x-wav,audio/mp4,audio/aac,audio/ogg"
-    >
+        <div class="about-text">
 
-    <small>
-      Formats recommandés : MP3 ou WAV.
-    </small>
+          <h3>
+            KÉVINE SHOOTER
+          </h3>
 
+          <p class="subtitle">
+            Auteur-compositeur, chanteur, rappeur et écrivain camerounais
+          </p>
 
+          <p>
+            Kévine Shooter est un auteur-compositeur, chanteur, rappeur et
+            écrivain camerounais. Artiste indépendant basé à Yaoundé, il
+            construit son univers autour de la réalité, des émotions, de
+            l'amour, de la famille, des relations humaines et des expériences
+            de la vie.
+          </p>
 
-    <!-- POCHETTE -->
+          <p>
+            À travers sa musique, Kévine Shooter raconte ce que beaucoup
+            vivent en silence : les blessures, les déceptions, les trahisons,
+            les difficultés, les rêves, l'ambition et cette volonté de
+            continuer malgré les épreuves.
+          </p>
 
-    <label for="coverFile">
-      🖼️ Pochette
-    </label>
+          <p>
+            Son univers navigue entre rap conscient, trap mélancolique,
+            mélodie, musique urbaine et sonorités inspirées de son
+            environnement camerounais. Son écriture cherche avant tout à
+            rester humaine, directe et proche de la réalité.
+          </p>
 
-    <input
-      id="coverFile"
-      type="file"
-      accept="image/jpeg,image/png,image/webp"
-    >
+          <p>
+            Pour Kévine Shooter, la musique est plus qu'un simple
+            divertissement. Elle est une manière de raconter une histoire,
+            d'exprimer une émotion, de transmettre un message et de donner
+            une voix à certaines réalités de la vie.
+          </p>
 
-    <small>
-      Formats acceptés : JPG, PNG ou WEBP.
-    </small>
+          <p>
+            Son premier album solo,
+            <strong>« RÉALITÉ ET PASSION »</strong>,
+            représente deux dimensions essentielles de son parcours :
+            la réalité de la vie et la passion qui pousse à continuer malgré
+            les difficultés.
+          </p>
 
+          <p>
+            À travers ses projets, Kévine Shooter poursuit son chemin en tant
+            qu'artiste indépendant avec l'ambition de développer son identité,
+            de rapprocher sa musique du public et de faire connaître son
+            univers au-delà du Cameroun.
+          </p>
 
+        </div>
 
-    <!-- DISTRIBUTION -->
+      </div>
 
-    <div class="worldwide">
+    </section>
 
-      🌍
 
-      <strong>
-        Distribution mondiale
-      </strong>
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-      <br>
+    <section id="contact" class="section contact">
 
-      Cette sortie sera configurée automatiquement
-      pour le monde entier.
+      <div class="section-title">
 
-    </div>
+        <p>COLLABORATION & CONTACT</p>
 
+        <h2>ME CONTACTER</h2>
 
+      </div>
 
-    <!-- BOUTON -->
+      <div class="contact-box">
 
-    <button
-      type="button"
-      onclick="createRelease()"
-    >
-      CRÉER ET ENVOYER
-    </button>
+        <p>
+          Pour une collaboration, une prestation, une interview,
+          un projet musical ou une demande professionnelle,
+          contacte directement Kévine Shooter.
+        </p>
 
+        <a href="mailto:contact@kevineshooter.com" class="btn">
+          CONTACT PROFESSIONNEL
+        </a>
 
-    <!-- MESSAGE -->
+        <p class="contact-note">
+          Les demandes professionnelles peuvent être traitées
+          prioritairement depuis l'espace prévu à cet effet.
+        </p>
 
-    <p id="releaseMessage"></p>
+      </div>
 
+    </section>
 
-    <!-- PROGRESSION -->
 
-    <div
-      id="uploadProgress"
-      style="display:none;"
-    >
+    <!-- =========================
+         CONNEXION ARTISTE
+    ========================== -->
 
-      Upload en cours...
+    <section id="connexion" class="section login-section">
 
-    </div>
+      <div class="section-title">
 
-  </div>
+        <p>ESPACE PRIVÉ</p>
 
+        <h2>ESPACE ARTISTE</h2>
 
-</section>
+      </div>
 
+      <div id="login" class="login-box">
 
-</main>
+        <h3>Connexion</h3>
 
+        <input
+          id="email"
+          type="email"
+          placeholder="Adresse e-mail"
+          autocomplete="email"
+        >
 
+        <input
+          id="password"
+          type="password"
+          placeholder="Mot de passe"
+          autocomplete="current-password"
+        >
 
-<!-- =========================
-     FOOTER
-========================= -->
+        <button onclick="login()" class="btn">
+          SE CONNECTER
+        </button>
 
-<footer>
+        <p id="loginMessage" class="message"></p>
 
-  <h3>
-    KÉVINE SHOOTER
-  </h3>
+      </div>
 
-  <p>
-    © 2026 Kévine Shooter — Tous droits réservés.
-  </p>
 
-</footer>
+      <!-- =========================
+           DASHBOARD
+      ========================== -->
 
+      <div id="dashboard" class="dashboard">
 
+        <div class="dashboard-header">
 
-<!-- =========================
-     SUPABASE
-========================= -->
+          <div>
+            <p>ESPACE ARTISTE</p>
+            <h3>Kévine Shooter</h3>
+          </div>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
-></script>
+          <button onclick="logout()" class="btn-small">
+            Déconnexion
+          </button>
 
+        </div>
 
-<script src="config.js"></script>
 
-<script src="app.js"></script>
+        <div class="stats">
+
+          <div class="stat-card">
+            <span>Écoutes</span>
+            <strong id="streamCount">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Sorties</span>
+            <strong id="releaseCount">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Revenus</span>
+            <strong id="revenue">0 XAF</strong>
+          </div>
+
+        </div>
+
+
+        <button onclick="showNewRelease()" class="btn">
+          + NOUVELLE SORTIE
+        </button>
+
+
+        <!-- NOUVELLE SORTIE -->
+
+        <div id="newRelease" class="new-release">
+
+          <h3>Créer une sortie</h3>
+
+          <input
+            id="releaseTitle"
+            type="text"
+            placeholder="Titre de la sortie"
+          >
+
+          <select id="releaseType">
+
+            <option value="single">
+              Single
+            </option>
+
+            <option value="album">
+              Album
+            </option>
+
+            <option value="ep">
+              EP
+            </option>
+
+          </select>
+
+
+          <input
+            id="releaseGenre"
+            type="text"
+            placeholder="Genre musical"
+          >
+
+
+          <input
+            id="releaseDate"
+            type="date"
+          >
+
+
+          <input
+            id="trackNumber"
+            type="number"
+            value="1"
+            min="1"
+            placeholder="Numéro du morceau"
+          >
+
+
+          <input
+            id="trackTitle"
+            type="text"
+            placeholder="Titre du morceau"
+          >
+
+
+          <label>
+            Fichier audio
+          </label>
+
+          <input
+            id="audioFile"
+            type="file"
+            accept="audio/*"
+          >
+
+
+          <label>
+            Pochette
+          </label>
+
+          <input
+            id="coverFile"
+            type="file"
+            accept="image/*"
+          >
+
+
+          <button onclick="createRelease()" class="btn">
+            PUBLIER LA SORTIE
+          </button>
+
+
+          <p id="releaseMessage" class="message"></p>
+
+          <div id="uploadProgress" class="progress">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="footer">
+
+    <h3>KÉVINE SHOOTER</h3>
+
+    <p>
+      Auteur-compositeur • Chanteur • Rappeur • Écrivain camerounais
+    </p>
+
+    <p>
+      © 2026 Kévine Shooter — Tous droits réservés.
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="config.js"></script>
+
+  <script src="app.js"></script>
 
 
 </body>
-
   </html>
