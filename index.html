@@ -2,66 +2,190 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
         content="Site officiel de Kévine Shooter — auteur-compositeur, chanteur, rappeur et écrivain camerounais.">
 
-  <title>KÉVINE SHOOTER — Site Officiel</title>
+  <meta name="theme-color" content="#050505">
+
+  <title>KÉVINE SHOOTER — OFFICIEL</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <div class="gold-glow glow-one"></div>
+  <div class="gold-glow glow-two"></div>
+
+  <!-- ================= HEADER ================= -->
 
   <header class="header">
 
-    <div class="logo">
-      KÉVINE <span>SHOOTER</span>
-    </div>
+    <a href="#accueil" class="brand">
 
-    <nav class="nav">
-      <a href="#accueil">Accueil</a>
-      <a href="#musique">Musique</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-      <a href="#connexion">Espace artiste</a>
+      <div class="brand-logo">
+        KS
+      </div>
+
+      <div class="brand-name">
+        <strong>KÉVINE<br>SHOOTER</strong>
+        <span>OFFICIEL</span>
+      </div>
+
+    </a>
+
+
+    <button id="menuToggle" class="menu-toggle">
+      ☰
+    </button>
+
+
+    <nav id="mainNav" class="nav">
+
+      <a href="#accueil" class="active">
+        ACCUEIL
+      </a>
+
+      <a href="#apropos">
+        À PROPOS
+      </a>
+
+      <a href="#actualites">
+        ACTUALITÉS
+      </a>
+
+      <a href="#musique">
+        PROJETS
+      </a>
+
+      <a href="#galerie">
+        GALERIE
+      </a>
+
+      <a href="#reseaux">
+        RÉSEAUX
+      </a>
+
+      <a href="#contact">
+        CONTACT
+      </a>
+
     </nav>
+
+
+    <a href="#connexion" class="official-button">
+      ♢ ESPACE OFFICIEL
+    </a>
 
   </header>
 
 
-  <!-- =========================
-       ACCUEIL
-  ========================== -->
-
   <main>
+
+
+    <!-- ================= HERO ================= -->
 
     <section id="accueil" class="hero">
 
+      <div class="hero-background"></div>
+
+      <div class="hero-art">
+
+        <div class="hero-ring"></div>
+
+        <div class="hero-ks">
+          KS
+        </div>
+
+        <div class="hero-photo">
+
+          <img
+            src="assets/kevineshooter.jpg"
+            alt="Kévine Shooter"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="photo-fallback">
+            <strong>KS</strong>
+            <span>KÉVINE SHOOTER</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
       <div class="hero-content">
 
-        <p class="hero-small">
+        <p class="eyebrow">
           AUTEUR-COMPOSITEUR • CHANTEUR • RAPPEUR • ÉCRIVAIN
         </p>
 
         <h1>
-          KÉVINE<br>
+          KÉVINE
           <span>SHOOTER</span>
         </h1>
 
-        <p class="hero-text">
-          La réalité de la vie transformée en musique.
+        <div class="official-line">
+          <span>OFFICIEL</span>
+          <i></i>
+        </div>
+
+        <h2>
+          Un talent. Une vision. Une mission.
+        </h2>
+
+        <p class="hero-description">
+          Une voix, une histoire et un univers construits autour
+          de la réalité, de la passion et des émotions.
         </p>
 
-        <a href="#musique" class="btn">
-          ÉCOUTER MA MUSIQUE
+        <div class="hero-buttons">
+
+          <a href="#apropos" class="btn gold">
+            DÉCOUVRIR MON UNIVERS
+            <b>›</b>
+          </a>
+
+          <a href="#musique" class="btn outline">
+            ÉCOUTER MA MUSIQUE
+            <b>▶</b>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Réseaux verticaux -->
+
+      <div id="reseaux" class="social-bar">
+
+        <a href="#" aria-label="Instagram">
+          ◎
+        </a>
+
+        <a
+          href="https://youtube.com/@kevineshooter-237ks"
+          target="_blank"
+          rel="noopener"
+          aria-label="YouTube"
+        >
+          ▶
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          ♪
+        </a>
+
+        <a href="#" aria-label="Facebook">
+          f
+        </a>
+
+        <a href="#" aria-label="Spotify">
+          ●
         </a>
 
       </div>
@@ -69,24 +193,299 @@
     </section>
 
 
-    <!-- =========================
-         MUSIQUE
-    ========================== -->
+    <!-- ================= STATS ================= -->
 
-    <section id="musique" class="section">
+    <section class="identity">
 
-      <div class="section-title">
+      <div class="identity-item">
 
-        <p>MON UNIVERS</p>
+        <span>♛</span>
 
-        <h2>MES SORTIES</h2>
+        <div>
+          <small>TALENT</small>
+          <strong>100%</strong>
+        </div>
 
       </div>
+
+
+      <div class="identity-item">
+
+        <span>◉</span>
+
+        <div>
+          <small>PASSION</small>
+          <strong>100%</strong>
+        </div>
+
+      </div>
+
+
+      <div class="identity-item">
+
+        <span>♫</span>
+
+        <div>
+          <small>CRÉATIVITÉ</small>
+          <strong>100%</strong>
+        </div>
+
+      </div>
+
+
+      <div class="identity-item">
+
+        <span>♧</span>
+
+        <div>
+          <small>COMMUNAUTÉ</small>
+          <strong>100%</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ACTUALITÉS ================= -->
+
+    <section id="actualites" class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            ACTUALITÉS
+          </p>
+
+          <h2>
+            DERNIÈRES
+            <span>NOUVELLES</span>
+          </h2>
+
+        </div>
+
+        <a href="#contact" class="section-link">
+          VOIR TOUTES LES ACTUALITÉS →
+        </a>
+
+      </div>
+
+
+      <div class="news-grid">
+
+
+        <article class="news-card">
+
+          <div class="news-image news-one">
+            <strong>
+              NOUVEAU<br>
+              <span>PROJET</span>
+            </strong>
+          </div>
+
+          <div class="news-content">
+
+            <small>
+              2026 • KÉVINE SHOOTER
+            </small>
+
+            <h3>
+              Un nouvel univers arrive.
+            </h3>
+
+            <p>
+              Reste connecté pour découvrir les prochains
+              projets et nouvelles sorties.
+            </p>
+
+            <a href="#musique">
+              LIRE PLUS →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image news-two">
+            <strong>
+              STUDIO<br>
+              <span>SESSION</span>
+            </strong>
+          </div>
+
+          <div class="news-content">
+
+            <small>
+              2026 • CRÉATION
+            </small>
+
+            <h3>
+              La musique continue.
+            </h3>
+
+            <p>
+              De nouvelles idées, de nouvelles émotions
+              et toujours la même passion.
+            </p>
+
+            <a href="#musique">
+              LIRE PLUS →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image news-three">
+            <strong>
+              MERCI<br>
+              <span>LA FAMILLE</span>
+            </strong>
+          </div>
+
+          <div class="news-content">
+
+            <small>
+              2026 • COMMUNAUTÉ
+            </small>
+
+            <h3>
+              Merci pour votre soutien.
+            </h3>
+
+            <p>
+              Chaque écoute, chaque partage et chaque message
+              compte dans cette aventure.
+            </p>
+
+            <a href="#reseaux">
+              NOUS REJOINDRE →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= À PROPOS ================= -->
+
+    <section id="apropos" class="section about">
+
+      <div class="about-grid">
+
+
+        <div class="about-visual">
+
+          <div class="about-circle"></div>
+
+          <div class="about-ks">
+            KS
+          </div>
+
+          <div class="about-title">
+            KÉVINE<br>
+            SHOOTER
+            <span>OFFICIEL</span>
+          </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <p class="section-label">
+            QUI SUIS-JE ?
+          </p>
+
+          <h2>
+            L'ARTISTE<br>
+            DERRIÈRE
+            <span>LA MUSIQUE.</span>
+          </h2>
+
+          <h3>
+            Auteur-compositeur, chanteur, rappeur
+            et écrivain camerounais.
+          </h3>
+
+          <p>
+            Kévine Shooter est un artiste indépendant basé à
+            Yaoundé. Son univers se construit autour de la
+            réalité, des émotions, de l'amour, de la famille,
+            des relations humaines et des expériences de la vie.
+          </p>
+
+          <p>
+            À travers sa musique, il raconte ce que beaucoup
+            vivent en silence : les blessures, les déceptions,
+            les trahisons, les difficultés, les rêves et cette
+            volonté de continuer malgré les épreuves.
+          </p>
+
+          <p>
+            Son premier album solo
+            <strong>RÉALITÉ ET PASSION</strong>
+            représente deux dimensions essentielles de son
+            parcours : la réalité de la vie et la passion qui
+            pousse à continuer.
+          </p>
+
+          <a href="#contact" class="text-link">
+            EN SAVOIR PLUS SUR KÉVINE SHOOTER →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= MUSIQUE ================= -->
+
+    <section id="musique" class="section music">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            MUSIQUE
+          </p>
+
+          <h2>
+            MES
+            <span>PROJETS</span>
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Écoute gratuitement les sorties publiées
+          sur le site officiel.
+        </p>
+
+      </div>
+
+
+      <!-- IMPORTANT : app.js utilise cette ID -->
 
       <div id="releases" class="releases">
 
         <div class="loading">
-          Chargement de mes sorties...
+          CHARGEMENT DE MES SORTIES...
         </div>
 
       </div>
@@ -94,76 +493,70 @@
     </section>
 
 
-    <!-- =========================
-         À PROPOS
-    ========================== -->
+    <!-- ================= GALERIE ================= -->
 
-    <section id="apropos" class="section about">
+    <section id="galerie" class="section gallery">
 
-      <div class="section-title">
+      <div class="section-header">
 
-        <p>QUI SUIS-JE ?</p>
+        <div>
 
-        <h2>À PROPOS DE KÉVINE SHOOTER</h2>
+          <p class="section-label">
+            GALERIE
+          </p>
+
+          <h2>
+            EN
+            <span>IMAGES</span>
+          </h2>
+
+        </div>
 
       </div>
 
-      <div class="about-content">
 
-        <div class="about-text">
+      <div class="gallery-grid">
 
-          <h3>
-            KÉVINE SHOOTER
-          </h3>
+        <div class="gallery-item">
+          <img src="assets/photo-1.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>KS</span>
+        </div>
 
-          <p class="subtitle">
-            Auteur-compositeur, chanteur, rappeur et écrivain camerounais
-          </p>
+        <div class="gallery-item">
+          <img src="assets/photo-2.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>STUDIO</span>
+        </div>
 
-          <p>
-            Kévine Shooter est un auteur-compositeur, chanteur, rappeur et
-            écrivain camerounais. Artiste indépendant basé à Yaoundé, il
-            construit son univers autour de la réalité, des émotions, de
-            l'amour, de la famille, des relations humaines et des expériences
-            de la vie.
-          </p>
+        <div class="gallery-item">
+          <img src="assets/photo-3.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>SHOOTER</span>
+        </div>
 
-          <p>
-            À travers sa musique, Kévine Shooter raconte ce que beaucoup
-            vivent en silence : les blessures, les déceptions, les trahisons,
-            les difficultés, les rêves, l'ambition et cette volonté de
-            continuer malgré les épreuves.
-          </p>
+        <div class="gallery-item">
+          <img src="assets/photo-4.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>PASSION</span>
+        </div>
 
-          <p>
-            Son univers navigue entre rap conscient, trap mélancolique,
-            mélodie, musique urbaine et sonorités inspirées de son
-            environnement camerounais. Son écriture cherche avant tout à
-            rester humaine, directe et proche de la réalité.
-          </p>
+        <div class="gallery-item">
+          <img src="assets/photo-5.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>CRÉATIVITÉ</span>
+        </div>
 
-          <p>
-            Pour Kévine Shooter, la musique est plus qu'un simple
-            divertissement. Elle est une manière de raconter une histoire,
-            d'exprimer une émotion, de transmettre un message et de donner
-            une voix à certaines réalités de la vie.
-          </p>
-
-          <p>
-            Son premier album solo,
-            <strong>« RÉALITÉ ET PASSION »</strong>,
-            représente deux dimensions essentielles de son parcours :
-            la réalité de la vie et la passion qui pousse à continuer malgré
-            les difficultés.
-          </p>
-
-          <p>
-            À travers ses projets, Kévine Shooter poursuit son chemin en tant
-            qu'artiste indépendant avec l'ambition de développer son identité,
-            de rapprocher sa musique du public et de faire connaître son
-            univers au-delà du Cameroun.
-          </p>
-
+        <div class="gallery-item">
+          <img src="assets/photo-6.jpg"
+               alt="Kévine Shooter"
+               onerror="this.style.display='none'">
+          <span>RÉALITÉ</span>
         </div>
 
       </div>
@@ -171,59 +564,131 @@
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="section contact">
 
-      <div class="section-title">
+      <div class="contact-grid">
 
-        <p>COLLABORATION & CONTACT</p>
+        <div>
 
-        <h2>ME CONTACTER</h2>
+          <p class="section-label">
+            COLLABORATION • BOOKING • MÉDIA
+          </p>
 
-      </div>
+          <h2>
+            PARLONS DE
+            <span>TON PROJET.</span>
+          </h2>
 
-      <div class="contact-box">
+          <p>
+            Pour une collaboration, une prestation,
+            une interview ou une demande professionnelle,
+            contacte directement Kévine Shooter.
+          </p>
 
-        <p>
-          Pour une collaboration, une prestation, une interview,
-          un projet musical ou une demande professionnelle,
-          contacte directement Kévine Shooter.
-        </p>
+        </div>
 
-        <a href="mailto:contact@kevineshooter.com" class="btn">
-          CONTACT PROFESSIONNEL
-        </a>
 
-        <p class="contact-note">
-          Les demandes professionnelles peuvent être traitées
-          prioritairement depuis l'espace prévu à cet effet.
-        </p>
+        <div class="contact-card">
+
+          <div class="contact-row">
+
+            <span>✉</span>
+
+            <div>
+              <small>EMAIL</small>
+              <a href="mailto:contact@kevineshooter.com">
+                contact@kevineshooter.com
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="contact-row">
+
+            <span>☎</span>
+
+            <div>
+              <small>TÉLÉPHONE</small>
+              <a href="tel:+237600000000">
+                +237 6 00 00 00 00
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="contact-row">
+
+            <span>⌖</span>
+
+            <div>
+              <small>BASE</small>
+              <p>Yaoundé, Cameroun</p>
+            </div>
+
+          </div>
+
+
+          <a
+            href="mailto:contact@kevineshooter.com"
+            class="btn gold full"
+          >
+            ME CONTACTER →
+          </a>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- =========================
-         CONNEXION ARTISTE
-    ========================== -->
+    <!-- ================= ESPACE OFFICIEL ================= -->
 
-    <section id="connexion" class="section login-section">
+    <section id="connexion" class="section official">
 
-      <div class="section-title">
+      <div class="section-header">
 
-        <p>ESPACE PRIVÉ</p>
+        <div>
 
-        <h2>ESPACE ARTISTE</h2>
+          <p class="section-label">
+            ESPACE PRIVÉ
+          </p>
+
+          <h2>
+            ESPACE
+            <span>OFFICIEL</span>
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Accès réservé à l'artiste.
+        </p>
 
       </div>
 
+
+      <!-- IMPORTANT : IDs conservés pour app.js -->
+
       <div id="login" class="login-box">
 
-        <h3>Connexion</h3>
+        <div class="login-logo">
+          KS
+        </div>
+
+        <h3>
+          CONNEXION ARTISTE
+        </h3>
+
+        <p>
+          Connecte-toi pour gérer tes sorties,
+          tes morceaux et tes statistiques.
+        </p>
+
 
         <input
           id="email"
@@ -232,6 +697,7 @@
           autocomplete="email"
         >
 
+
         <input
           id="password"
           type="password"
@@ -239,30 +705,44 @@
           autocomplete="current-password"
         >
 
-        <button onclick="login()" class="btn">
-          SE CONNECTER
+
+        <button
+          onclick="login()"
+          class="btn gold full"
+        >
+          SE CONNECTER →
         </button>
+
 
         <p id="loginMessage" class="message"></p>
 
       </div>
 
 
-      <!-- =========================
-           DASHBOARD
-      ========================== -->
+      <!-- DASHBOARD -->
 
       <div id="dashboard" class="dashboard">
 
         <div class="dashboard-header">
 
           <div>
-            <p>ESPACE ARTISTE</p>
-            <h3>Kévine Shooter</h3>
+
+            <p class="section-label">
+              ESPACE ARTISTE
+            </p>
+
+            <h3>
+              Kévine Shooter
+            </h3>
+
           </div>
 
-          <button onclick="logout()" class="btn-small">
-            Déconnexion
+
+          <button
+            onclick="logout()"
+            class="btn outline"
+          >
+            DÉCONNEXION
           </button>
 
         </div>
@@ -271,24 +751,27 @@
         <div class="stats">
 
           <div class="stat-card">
-            <span>Écoutes</span>
+            <span>ÉCOUTES</span>
             <strong id="streamCount">0</strong>
           </div>
 
           <div class="stat-card">
-            <span>Sorties</span>
+            <span>SORTIES</span>
             <strong id="releaseCount">0</strong>
           </div>
 
           <div class="stat-card">
-            <span>Revenus</span>
+            <span>REVENUS</span>
             <strong id="revenue">0 XAF</strong>
           </div>
 
         </div>
 
 
-        <button onclick="showNewRelease()" class="btn">
+        <button
+          onclick="showNewRelease()"
+          class="btn gold"
+        >
           + NOUVELLE SORTIE
         </button>
 
@@ -297,13 +780,17 @@
 
         <div id="newRelease" class="new-release">
 
-          <h3>Créer une sortie</h3>
+          <h3>
+            Créer une sortie
+          </h3>
+
 
           <input
             id="releaseTitle"
             type="text"
             placeholder="Titre de la sortie"
           >
+
 
           <select id="releaseType">
 
@@ -373,15 +860,17 @@
           >
 
 
-          <button onclick="createRelease()" class="btn">
-            PUBLIER LA SORTIE
+          <button
+            onclick="createRelease()"
+            class="btn gold"
+          >
+            PUBLIER LA SORTIE →
           </button>
 
 
           <p id="releaseMessage" class="message"></p>
 
-          <div id="uploadProgress" class="progress">
-          </div>
+          <div id="uploadProgress" class="progress"></div>
 
         </div>
 
@@ -392,28 +881,145 @@
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- ================= FOOTER ================= -->
 
   <footer class="footer">
 
-    <h3>KÉVINE SHOOTER</h3>
+    <div class="footer-main">
 
-    <p>
-      Auteur-compositeur • Chanteur • Rappeur • Écrivain camerounais
-    </p>
+      <div class="footer-brand">
 
-    <p>
-      © 2026 Kévine Shooter — Tous droits réservés.
-    </p>
+        <div class="brand-logo">
+          KS
+        </div>
+
+        <div>
+          <strong>
+            KÉVINE SHOOTER
+          </strong>
+
+          <span>
+            OFFICIEL
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <div>
+
+          <h4>
+            LIENS RAPIDES
+          </h4>
+
+          <a href="#accueil">Accueil</a>
+          <a href="#apropos">À propos</a>
+          <a href="#actualites">Actualités</a>
+          <a href="#musique">Projets</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            RÉSEAUX
+          </h4>
+
+          <a href="#reseaux">Instagram</a>
+          <a href="https://youtube.com/@kevineshooter-237ks"
+             target="_blank"
+             rel="noopener">
+            YouTube
+          </a>
+          <a href="#reseaux">TikTok</a>
+          <a href="#reseaux">Facebook</a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            CONTACT
+          </h4>
+
+          <a href="mailto:contact@kevineshooter.com">
+            Email professionnel
+          </a>
+
+          <a href="tel:+237600000000">
+            +237 6 00 00 00 00
+          </a>
+
+          <span>
+            Yaoundé, Cameroun
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Kévine Shooter — Tous droits réservés.
+      </span>
+
+      <span>
+        ✓ SITE OFFICIEL
+      </span>
+
+    </div>
 
   </footer>
 
 
-  <!-- =========================
-       SCRIPTS
-  ========================== -->
+  <!-- MENU MOBILE -->
+
+  <script>
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const mainNav =
+      document.getElementById("mainNav");
+
+
+    menuToggle.addEventListener(
+      "click",
+      function () {
+
+        mainNav.classList.toggle("open");
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(".nav a")
+      .forEach(function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            mainNav.classList.remove("open");
+
+          }
+        );
+
+      });
+
+  </script>
+
+
+  <!-- SUPABASE -->
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
@@ -421,6 +1027,5 @@
 
   <script src="app.js"></script>
 
-
 </body>
-  </html>
+          </html>
